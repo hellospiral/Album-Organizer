@@ -1,0 +1,15 @@
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+
+<h1>Albums matching your search: </h1>
+
+<ul>
+    @foreach (var album in Model)
+    {
+        <li>@album.GetTitle() by @album.GetArtistName()</li>
+    }
+</ul>
+
+<a href="/">Back to all albums</a>
+
